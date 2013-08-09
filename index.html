@@ -5,7 +5,7 @@
     <title>DarkLight - FastForward</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://d396qusza40orc.cloudfront.net/startup%2Fcode%2Fbootstrap-combined.no-icons.min.css">
-    <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css">
+    <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/font-awesome/3.0.2/css/font-awesome.css">
     <link rel="stylesheet" href="https://d396qusza40orc.cloudfront.net/startup%2Fcode%2Fsocial-buttons.css">    
     <script src="https://d396qusza40orc.cloudfront.net/startup%2Fcode%2Fjquery.js"></script>
     <script src="https://d396qusza40orc.cloudfront.net/startup%2Fcode%2Fbootstrap.js"></script>
@@ -112,28 +112,13 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="brand" href="./index.html">DarkLight</a>
+          <a class="brand" href="#">DarkLight</a>
           <div class="nav-collapse collapse">
             <ul class="nav">
-              <li class="active">
-                <a href="./index.html">Home</a>
-              </li>
-              <li class="divider-vertical"></li>
-              <li>
-                <a href="./about.html">About</a>
-              </li>
-              <li class="divider-vertical"></li>
-              <li>
-                <a href="./contact.html">Contact</a>
-              </li>
-              <li class="divider-vertical"></li>
+              <li class="active"><a href="#">Home</a></li>
+              <li><a href="#about">About</a></li>
+              <li><a href="#contact">Contact</a></li>
             </ul>
-            <!--
-            <div class="span2 offset2 signin_register">
-              <button type="button" class="btn btn-small">Sign in</button>
-              <button type="button" class="btn btn-small">Sign Up</button>
-            </div>
-            -->
           </div><!--/.nav-collapse -->
         </div>
       </div>
@@ -155,96 +140,81 @@
         <div class="span12">
           <!-- Special typography from Bootstrap for lead paragraph. -->
           <!-- http://twitter.github.io/bootstrap/base-css.html#typography -->
-          <p class="lead">Think. Research. Plan. Achieve.</p>
+          <p class="lead">Think. Plan. Achieve.</p>
         </div>
       </div>
       <div class="row-fluid pitch">
+        <div class="span5 offset1 video">
+          <img class="img-polaroid" src="http://www.gdriveurl.com/?idl=013760681318&out=1">
+        </div>
+
         <!-- We define a new 'actions' div to contain statistics, order, and share buttons.-->
-        <div class="span5 offset4 actions">
+        <div class="span5 actions">
+          <div class="row-fluid">
           <div class="span8 offset2">
-            <div class="statistics">
+            <div class="row-fluid statistics">
               <div class="span4">
                 <!-- linediv-l and linediv-r give dividing lines that look
                 different in horizontal and vertical layouts, illustrating
                 media queries. -->
                 <div class="linediv-l">
-                <h3>0</h3> <p>backers</p>
+                <h3>1000</h3> <p>backers</p>
                 </div>
               </div>
               <div class="span4">
                 <div class="linediv-c">
-                  <h3>$0</h3> <p>of $20,000</p>
+                  <h3>$6000</h3> <p>of $10,000</p>
                 </div>
               </div>
               <div class="span4">
                 <div class="linediv-r">
-                <h3>30</h3> <p>days left</p>
+                <h3>10</h3> <p>days left</p>
                 </div>
               </div>
             </div>
           </div>
+          <div class="row-fluid">
           <div class="span10 offset1">
             <!-- Bootstrap progress bar -->
             <!-- http://twitter.github.io/bootstrap/components.html#progress -->
             <div class="thermometer progress active">
-              <div class="bar bar-success" style="width: 0%;"></div>
-              <div class="bar bar-warning" style="width: 100%;"></div>
+              <div class="bar bar-success" style="width: 60%;"></div>
+              <div class="bar bar-warning" style="width: 40%;"></div>
             </div>
           </div>
+          </div>
+          <div class="row-fluid">
           <div class="span6 offset3 order">
             <!-- Standard Bootstrap button. -->
             <!-- http://twitter.github.io/bootstrap/base-css.html#buttons -->
-            <a href="#preorderFastForward" role="button" class="btn btn-success btn-large" data-toggle="modal"><i class="icon-shopping-cart"></i> | Preorder</a>
+            <button class="btn btn-success btn-large">Preorder</button>
           </div>
+          </div>
+          <div class="row-fluid">
           <div class="span8 offset2 social">
             <!-- Social buttons are not included in default Bootstrap. -->
             <!-- See: http://noizwaves.github.io/bootstrap-social-buttons -->
-            <a href="https://twitter.com/ngparikh" class="btn btn-twitter twitter-follow-button" data-show-count="true" data-lang="en"><i class="icon-twitter"></i> | Twitter</a>
-            <a href="http://www.facebook.com/nilang.parikh.1" role="button" class="btn btn-facebook" data-toggle="modal"><i class="icon-facebook"></i> | Facebook</a>
-            <button class="btn btn-google-plus"><i class="icon-google-plus"></i> | Connect with Google Plus</button>
+            <button class="btn btn-twitter"><i class="icon-twitter"></i> | Twitter</button>
+            <button class="btn btn-facebook"><i class="icon-facebook"></i> | Facebook</button>
           </div>
+          </div>
+        </div>
         </div>
       </div>
 
-      <!-- Modals -->
-      <div id="preorderFastForward" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="preorderFastForwardHeading" aria-hidden="true">
-        <div class="modal-header">
-          <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
-          <h3 id="preorderFastForwardHeading">Preorder FastForward</h3>
-        </div>
-        <div class="modal-body">
-           <p>Please show support for FastForward by selecting the appropriate pledge.</p>
-        </div>
-        <div class="modal-footer">
-          <button class="btn" data-dismiss="modal" aria-hidden="true">Cancel</button>
-          <button class="btn btn-primary">Pledge</button>
-        </div>
-      </div>
-      
       <!-- Beyond this part the marketing copy begins. -->
       <!-- https://developer.mozilla.org/en-US/docs/Web/CSS/text-align -->
       <!-- http://twitter.github.io/bootstrap/base-css.html#images -->
-      <div class="row-fluid section0">
-        <div class="span5 offset1 copy copy-right">
-          <p>
-            Many people find managing their investments very cumbersome
-            and time consuming. Reviewing investments for changes and diversity.
-            Calculating profit or loss for each investment in your portfolio.
-          </p>
-        </div>
-        <div class="span5 asset">
-          <img class="img-polaroid" src="http://gdurl.com/eXtm">
-          <img class="img-polaroid" src="http://gdurl.com/nhgi">
-        </div>
-      </div>
-      
+      <!-- http://placehold.it -->
       <div class="row-fluid section1">
-       <div class="span5 offset1 asset">
-          <img class="img-polaroid" src="http://gdurl.com/8uGu">
-          <img class="img-polaroid" src="http://gdurl.com/pDFf">
+        <div class="span5 offset1 asset">
+          <img class="img-polaroid" src="http://www.gdriveurl.com/?idl=913760684675&out=1">
         </div>
         <div class="span5 copy">
           <p>
+            Many people find managing their investments very cumbersome and
+            time consuming. Reviewing investments for changes and diversity.
+            Calculating profit or loss for each investment in your portfolio.
             Watching your portfolio decrease in value and making decisions
             without understanding all of your choices. We all have been there
             and it is frustrating. With vast amounts of information on the internet,
@@ -265,8 +235,7 @@
           </p>
         </div>
         <div class="span5 asset">
-          <img class="img-polaroid" src="http://gdurl.com/lUCY">
-          <img class="img-polaroid" src="http://gdurl.com/l41K">
+          <img class="img-polaroid" src="http://www.gdriveurl.com/?idl=213760686196&out=1">
         </div>
       </div>
 
@@ -313,7 +282,7 @@
       <div class="row-fluid footer">
         <div class="span12">
           <p>
-            This work is licensed under the <a href="http://creativecommons.org/licenses/by-sa/3.0/">CC By-SA 3.0</a>
+            &copy; 2013. This work is licensed under the <a href="http://creativecommons.org/licenses/by-sa/3.0/">CC By-SA 3.0</a>
           </p>
         </div>
       </div>
