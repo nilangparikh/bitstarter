@@ -1,5 +1,5 @@
 {
-  "name": "darklight-orders",
+  "name": "bitstarter-ssjs-orders",
   "version": "0.0.1",
   "description": "Simple server-side JS order processing",
   "main": "web.js",
